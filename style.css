@@ -1,0 +1,316 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #0b0c10;
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #030303;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fafdfd;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #bg-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    color: #f3f9f8;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #c5c6c7;
+  }
+  
+  .about, .research, .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .about h2, .research h2, .contact h2 {
+    font-size: 2rem;
+    color: #eff6f5;
+  }
+  
+  /* About Section: Two-column layout with horizontal image slider */
+  .about-heading{
+   margin-top: 40px;
+  }
+
+.about.split-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    text-align: left;
+    margin-bottom: 180px;
+    color: #f6ebeb;
+    font-family: 'YourCustomFont', sans-serif; /* Replace with your actual font name */
+  }
+  
+  .about-heading {
+    font-weight: 1000;
+    font-size: 50px;
+    margin-bottom: 50px;
+    
+  }
+  
+  .about-line {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  
+  .sliderContainer {
+    flex: 1;
+    position: relative;
+    width: 120%;
+    max-width: 900px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #333;
+  }
+  
+  .sliderContainer::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+  
+  .sliderContainer > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: 0;
+  }
+  
+  .sliderContainer > div.active {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  
+  
+  
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #3c4140;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #0e0f0f;
+    color: #f3f5f8;
+  }
+
+  .research {
+    position: relative;
+    min-height: 600px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .research::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('research.bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(8%); /* Makes it faint/darker */
+    z-index: 0;
+  }
+  
+  /* Ensure your text appears above the overlay */
+  .research * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  .contact{
+    margin-top: 100px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: auto;
+    gap: 1.5rem;
+  }
+  
+  input, textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 0.8rem;
+    background: #3c4140;
+    color: #f3f5f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #2d2e2e;
+    color: #f3f5f8;
+  }
+  
+  .nasa-footer {
+    background-color: #161718;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    margin: 20px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-media li {
+    list-style: none;
+  }
+  
+  .social-media li a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+
+
+  
