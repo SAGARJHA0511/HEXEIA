@@ -5,139 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About HEXEIA</title>
   <link rel="stylesheet" href="about.css"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0a0a;
-      color: #ffffff;
-    }
-
-    header.hero {
-      position: relative;
-      height: 90vh;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #ffffff;
-    }
-
-    .hero video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      z-index: 1;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #00bfff;
-      display: inline-block;
-      padding-bottom: 0.5rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background-color: #1a1a1a;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #00bfff;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      color: #00bfff;
-      text-decoration: underline;
-    }
-
-    .team {
-      margin-top: 3rem;
-    }
-
-    .team-member {
-      background-color: #1a1a1a;
-      padding: 1.5rem;
-      border-radius: 12px;
-      text-align: center;
-    }
-
-    .team-member img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      border: 2px solid #00bfff;
-    }
-
-    .team-member h4 {
-      margin: 0.5rem 0 0.2rem;
-      color: #00bfff;
-    }
-
-    .team-member p {
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-  </style>
+   
 </head>
 <body>
     <!-- Navbar -->
@@ -171,57 +39,60 @@
     </div>
   </header>
 
-  <section>
+  <section> 
+  <section class="section-1">
     <h2>ABOUT HEXEIA</h2>
-    <p>
+    <p class="textbig">
       Founded in 2015, HEXEIA stands at the forefront of space technology innovation,
       specializing in the design and manufacturing of cutting-edge satellite components and systems. Our team of aerospace engineers, software developers, and materials scientists work collaboratively to push the boundaries of what's possible in orbital technology.
     </p>
-    <p>
+    <p class="textbig">
       What sets HEXEIA apart is our integrated approach to space technology. While many companies focus on isolated components, we develop comprehensive solutions that work seamlessly together—from the satellite bus that forms the foundation of spacecraft to the sophisticated ADCS systems that maintain precise orientation in orbit. Our proprietary VHF/UHF communication cards ensure reliable data transmission across vast distances.
     </p>
-    <p>
+    <p class="textbig">
       With a commitment to miniaturization without compromising functionality, HEXEIA's CubeSat and MicroSat platforms are enabling more organizations to access space than ever before. Whether supporting Earth observation missions, telecommunications, or scientific research, our technology is designed to perform reliably in the harshest environment known to humanity.
     </p>
   </section>
+  
 
-  <section>
-    <h2>What We Build</h2>
-    <p>Our comprehensive suite of space technology solutions</p>
-    <div class="grid">
-      <div class="card">
-        <h3>Satellite Bus</h3>
-        <p>The structural and functional foundation of any satellite. Our modular bus designs provide power, thermal control, and structural support while accommodating various mission-specific payloads.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div class="card">
-        <h3>Subsystems & Mainframe</h3>
-        <p>Advanced computing cores that process mission data and coordinate satellite operations. Our mainframes feature radiation-hardened processors and redundant systems for mission-critical reliability.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div class="card">
-        <h3>ADCS</h3>
-        <p>Attitude Determination and Control Systems that maintain precise satellite orientation. Our ADCS solutions combine star trackers, reaction wheels, and magnetorquers with proprietary algorithms for unmatched pointing accuracy.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div class="card">
-        <h3>Cubesats & Microsats</h3>
-        <p>Complete small satellite platforms ranging from 1U CubeSats to 50kg class microsatellites. Our standardized yet customizable designs dramatically reduce development time and launch costs.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div class="card">
-        <h3>VHF/UHF Communication Cards</h3>
-        <p>Compact, power-efficient radio systems enabling reliable satellite-to-ground communications. Our cards feature software-defined radio capabilities and advanced error correction for optimal data transmission.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div class="card">
-        <h3>Research & Innovation</h3>
-        <p>Our R&D division continuously explores next-generation space technologies, including optical communications, autonomous satellite operations, and advanced propulsion systems for future missions.</p>
-        <a href="#">Learn more</a>
-      </div>
+  <section class="section-2">
+  <h2>What We Build</h2>
+  <p>Our comprehensive suite of space technology solutions</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Satellite Bus</h3>
+      <p>The structural and functional foundation of any satellite...</p>
+      <a href="#">Learn more</a>
     </div>
-  </section>
+    <div class="card">
+      <h3>Subsystems & Mainframe</h3>
+      <p>Advanced computing cores that process mission data...</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="card">
+      <h3>ADCS</h3>
+      <p>Attitude Determination and Control Systems that maintain...</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="card">
+      <h3>Cubesats & Microsats</h3>
+      <p>Complete small satellite platforms ranging from 1U...</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="card">
+      <h3>VHF/UHF Communication Cards</h3>
+      <p>Compact, power-efficient radio systems enabling...</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="card">
+      <h3>Research & Innovation</h3>
+      <p>Our R&D division continuously explores next-generation...</p>
+      <a href="#">Learn more</a>
+    </div>
+  </div>
+</section>
 
+  <!-- <section class="what-we-build"> -->
   <section class="team">
     <h2>Meet Our Team</h2>
     <p>The brilliant minds behind HEXEIA's innovations</p>
@@ -258,6 +129,8 @@
       </div>
     </div>
   </section>
+  </section>
+  <!-- </section> -->
 
   <!-- Footer -->
 <footer class="modern-footer">

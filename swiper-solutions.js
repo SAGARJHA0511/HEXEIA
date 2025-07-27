@@ -1,13 +1,19 @@
-const swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
-  spaceBetween: 10,
+const swiper = new Swiper('.mySwiper', {
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  speed: 900,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
-  autoplay: {
-    delay: 2000, // 3 seconds between slides
-    disableOnInteraction: false, // keeps autoplay running after interactions
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
+
+
 
