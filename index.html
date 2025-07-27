@@ -4,22 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hexeia | Space Tech Innovators</title>
+  <link rel="icon" type="image/x-icon" href="HEXEIA LOGO.jpg">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <script defer src="HEXEIA.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  
+  <script defer src="swiper-solutions.js"></script>
 </head>
 <body>
+
   <!-- Navbar -->
   <header>
-    <nav class="navbar">
-      <div class="logo">HEXEIA</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#research">Research Papers</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="HEXEIA LOGO.jpg" alt="HEXEIA Logo" />
+      <!-- <span>HEXEIA</span> -->
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index2.html">About Us</a></li>
+      <li><a href="#solutions">Solutions</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <!-- <button
+  class="login-button"
+>
+  <span class="truncate">Log In</span>
+</button> -->
+ </nav>
+</header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -33,87 +47,177 @@
     </div>
   </section>
 
- <!-- About Section -->
- <section id="about" class="about split-section">
+  <!-- Solutions -->
+  <!-- Swiper Section -->
+<section class="solutions-slider">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
 
-    <!-- LEFT SIDE: Text -->
-    <div class="about-text">
-      <h2 class="about-heading">About Hexeia</h2>
-      <p class="about-line">Hexeia is a space tech company specializing in end-to-end CubeSat development.</p>
-      <p class="about-line">From advanced research and design to manufacturing, integration, testing, and launch services,</p>
-      <p class="about-line">we provide innovative, cost-effective solutions for academic, commercial, and defense applications.</p>
-      <p class="about-line">Our expertise includes high-resolution imaging, hyperspectral sensing, synthetic aperture radar,</p>
-      <p class="about-line">and real-time data analytics.</p>
-      <p class="about-line">We empower clients to harness space-based insights for environmental monitoring,</p>
-      <p class="about-line">communications, and security.</p>
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="split-section">
+          <div class="left-image">
+            <img src="Research3.jpg" alt="Signals Intelligence" />
+          </div>
+          <div class="right-content">
+            <p class="section-label">DEFENSE & NATIONAL SECURITY</p>
+            <h1><span>Signals</span><br />Intelligence</h1>
+            <p class="description">
+              We offer software and technologies that provide space-to-Earth and space-to-space
+              visualization in support of Intelligence, Surveillance, and Reconnaissance (ISR) applications.
+            </p>
+            <button class="learn-btn">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="split-section">
+          <div class="left-image">
+            <img src="Research2.jpg" alt="Hyperspectral Imaging" />
+          </div>
+          <div class="right-content">
+            <p class="section-label">EARTH OBSERVATION</p>
+            <h1><span>Hyperspectral</span><br />Imaging</h1>
+            <p class="description">
+              Delivering high-resolution hyperspectral data for agriculture, forestry, mineral mapping, and pollution tracking.
+            </p>
+            <button class="learn-btn">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="split-section">
+          <div class="left-image">
+            <img src="Research3.jpg" alt="Hyperspectral Imaging" />
+          </div>
+          <div class="right-content">
+            <p class="section-label">EARTH OBSERVATION</p>
+            <h1><span>Hyperspectral</span><br />Imaging</h1>
+            <p class="description">
+              Delivering high-resolution hyperspectral data for agriculture, forestry, mineral mapping, and pollution tracking.
+            </p>
+            <button class="learn-btn">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="split-section">
+          <div class="left-image">
+            <img src="Research4.jpg" alt="Hyperspectral Imaging" />
+          </div>
+          <div class="right-content">
+            <p class="section-label">EARTH OBSERVATION</p>
+            <h1><span>Hyperspectral</span><br />Imaging</h1>
+            <p class="description">
+              Delivering high-resolution hyperspectral data for agriculture, forestry, mineral mapping, and pollution tracking.
+            </p>
+            <button class="learn-btn">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-  
-    <!-- RIGHT SIDE: Slider -->
-    <div class="sliderContainer">
-      <div style="background-image: url('Research1.jpg');" class="active"></div>
-      <div style="background-image: url('Research2.jpg');"></div>
-      <div style="background-image: url('Research3.jpg');"></div>
-      <div style="background-image: url('Research4.jpg');"></div>
-      <div style="background-image: url('Research5.jpg');"></div>
-    </div>
-  
-  </section>
-  
+  </div>
+</section>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Research Papers Section -->
-  <section id="research" class="research">
-    <h2>Research & Publications</h2>
-    <p>Explore our latest research papers, innovations, and mission case studies.</p>
-    <a href="#submit-form" class="btn">Submit Your Query</a>
-  </section>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <!-- Contact Form -->
-  <section id="contact" class="contact">
-    <h2>CONTACT</h2> <br/>
-    <form id="submit-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="phone" placeholder="Your Contact Number" required />
-      <textarea name="query" rows="5" placeholder="Your Query"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 900,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
+
+  <!-- CTA Section -->
+<section class="cta-section">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="backgroung.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay Content -->
+  <div class="cta-container">
+    <h1>Explore Satellite Bus Solutions</h1>
+    <p>
+      Discover our advanced satellite bus platforms, designed for reliability and performance in space missions.
+    </p>
+    <button>Explore Solutions</button>
+  </div>
+</section>
+
 
   <!-- Footer -->
-  <footer class="nasa-footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>About HEXEIA</h4>
-        <ul>
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">Leadership</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Multimedia</a></li>
-          <li><a href="#">Downloads</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Connect</h4>
-        <ul class="social-media">
-          <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
-          <li><a href="#"><img src="twitter.png" alt="X"></a></li>
-          <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
-          <li><a href="#"><img src="linkedin.png" alt="Linkedin"></a></li>
-        </ul>
-      </div>
+<footer class="modern-footer">
+  <div class="footer-top">
+    <div class="footer-col logo-col">
+      <img src="HEXEIA LOGO.jpg" alt="Logo" class="footer-logo" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi perferendis ratione.</p>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 HEXEIA. All rights reserved.</p>
+
+    <div class="footer-col">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-  </footer>
+
+    <div class="footer-col">
+      <ul>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Journal</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Partners</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+      </div>
+      <button class="footer-btn">Contact Us</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2019-2020 All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
   
 </body>
 </html>

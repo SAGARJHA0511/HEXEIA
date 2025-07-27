@@ -16,3 +16,4 @@ setInterval(() => {
 
   slides[currentSlide].classList.add('active');
 }, 3000);
+
