@@ -6,11 +6,13 @@
     font-family: Arial, sans-serif;
   }
   
-  body {
-    background: #0b0c10;
-    color: #ffffff;
-    scroll-behavior: smooth;
-  }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
   
   /* Navbar styles */
 .navbar {
@@ -529,22 +531,22 @@
 
 
 /* footer */
- .modern-footer {
+ /* Footer Styles */
+.modern-footer {
   background-color: #000;
   color: #ccc;
-  padding: 100px 250px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 100px 40px 20px;
 }
 
 .footer-top {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: space-between;
+  gap: 30px;
   max-width: 1200px;
   margin: auto;
-  padding-bottom: 40px;
   border-bottom: 1px solid #222;
+  padding-bottom: 40px;
 }
 
 .footer-col {
@@ -564,7 +566,6 @@
 .footer-col p {
   font-size: 14px;
   color: #aaa;
-  line-height: 1.6;
 }
 
 .footer-col ul {
@@ -577,10 +578,9 @@
 }
 
 .footer-col ul li a {
-  text-decoration: none;
   color: #ccc;
+  text-decoration: none;
   font-size: 14px;
-  transition: 0.2s;
 }
 
 .footer-col ul li a:hover {
@@ -595,7 +595,6 @@
   margin-right: 10px;
   font-size: 16px;
   color: #ccc;
-  transition: 0.2s;
 }
 
 .footer-social a:hover {
@@ -605,13 +604,12 @@
 .footer-btn {
   background-color: #ff2b84;
   color: white;
-  border: none;
   padding: 10px 20px;
   font-size: 14px;
   border-radius: 20px;
+  border: none;
   cursor: pointer;
   margin-top: 10px;
-  transition: 0.3s;
 }
 
 .footer-btn:hover {
@@ -620,8 +618,13 @@
 
 .footer-bottom {
   text-align: center;
-  font-size: 13px;
   margin-top: 30px;
+  font-size: 13px;
   color: #777;
 }
 
+.divider {
+      height: 1px;
+      background: #222;
+      margin: 10px 5;
+    }
