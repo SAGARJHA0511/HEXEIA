@@ -39,7 +39,7 @@
 }
 
 .logo img {
-  height: 40px;
+  height: 25px;
   width: auto;
   object-fit: contain;
   border-radius: 4%;
@@ -556,6 +556,7 @@
 
 .logo-col {
   flex: 2 1 250px;
+   
 }
 
 .footer-logo {
